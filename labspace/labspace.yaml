@@ -3,23 +3,28 @@ metadata:
   sourceRepo: github.com/ajeetraina/labspace-sbx-agent
   contentVersion: abcd123 # Will be filled in during CI
 
-title: Labspace starter
+title: Docker Sandboxes for AI Agents
 description: |
-  A basic template for creating a Labspace, including all of the boilerplate needed to write and publish a Labspace.
+  Learn Docker Sandboxes from the ground up — install, run agents in isolated
+  shells, control network egress, manage credentials safely, work in parallel
+  with git worktrees, and orchestrate fleets of agents at the same time.
 
 sections:
-  - title: Introduction
-    contentPath: 01-introduction.md
-  - title: Main Content 1
-    contentPath: 02-main-content.md
-  - title: Conclusion
-    contentPath: 03-conclusion.md
+  - title: Welcome & Install
+    contentPath: 01-welcome.md
+  - title: Your First Sandbox
+    contentPath: 02-first-sandbox.md
+  - title: Network Policy
+    contentPath: 03-network-policy.md
+  - title: Credential Proxy & Secrets
+    contentPath: 04-secrets.md
+  - title: Branch Mode with Git Worktrees
+    contentPath: 05-branch-mode.md
+  - title: Multi-Agent Fleets
+    contentPath: 06-multi-agent.md
 
-# Services are used to add default tabs in the Labspace interface.
-# The IDE will always be present as a service, but you can add additional services as needed.
-# Icon values come from https://fonts.google.com/icons/
 services:
-  - id: app
-    url: http://localhost:3000
-    title: App
-    icon: anchor
+  - id: ide
+    url: http://localhost:8443
+    title: IDE
+    icon: code
